@@ -3,12 +3,12 @@ package net.zakaria.model;
 import java.util.Objects;
 import java.util.UUID;
 
-public class BankAccount {
+public abstract class BankAccount {
+    private final String securityRate = "high level of security";
     private String accountId;
     private double balance;
     private String currency;
     private AccountStatus status;
-
     public BankAccount() {
         this.accountId = UUID.randomUUID().toString();
         this.status = AccountStatus.CREATED;
@@ -18,6 +18,10 @@ public class BankAccount {
         this();
         this.balance = balance;
         this.currency = currency;
+    }
+
+    public String getSecurityRate() {
+        return securityRate;
     }
 
     public String getAccountId() {
@@ -77,6 +81,10 @@ public class BankAccount {
                 Objects.hashCode(balance) +
                 Objects.hashCode(status) +
                 Objects.hashCode(currency));
+    }
+    public abstract String getType();
+    public final void print(){
+        System.out.println("---------WEST-BANK------------");
     }
 
 }

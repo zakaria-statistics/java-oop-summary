@@ -1,15 +1,19 @@
 package net.zakaria;
 
 import net.zakaria.model.BankAccount;
+import net.zakaria.model.CurrentAccount;
+import net.zakaria.model.SavingAccount;
 
 public class Main {
     public static void main(String[] args) {
 
+        String input = "foo";
+        String input1 = "foo";
+        System.out.println(input1 == input);
 
-
-
-        BankAccount bankAccount = new BankAccount(10000,"MAD");
-        BankAccount bankAccount1 = new BankAccount(10000,"MAD");
+        System.out.println("--------------------------------");
+        BankAccount bankAccount = new CurrentAccount(10000,"MAD", 6789);
+        BankAccount bankAccount1 = new SavingAccount(10000,"MAD", 0.5);
         BankAccount bankAccount2 = bankAccount;
         //o = o1 => o.hashcode() = o1.hashcode() get in consideration memory addresses and object state
         System.out.println("*************************************");
