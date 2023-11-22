@@ -25,7 +25,7 @@ public final class SavingAccount extends BankAccount{
 
     @Override
     public String getType() {
-        return "Saving_Account";
+        return "SavingAccount";
     }
     /*@Override
     public void print(){

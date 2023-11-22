@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 public abstract class BankAccount {
-    private final String securityRate = "high level of security";
+    //private final String securityRate = "high level of security";
     private String accountId;
     private double balance;
     private String currency;
@@ -20,9 +20,6 @@ public abstract class BankAccount {
         this.currency = currency;
     }
 
-    public String getSecurityRate() {
-        return securityRate;
-    }
 
     public String getAccountId() {
         return accountId;

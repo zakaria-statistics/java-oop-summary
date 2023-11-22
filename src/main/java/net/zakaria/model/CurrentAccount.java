@@ -1,5 +1,7 @@
 package net.zakaria.model;
 
+import java.util.function.Consumer;
+
 public class CurrentAccount extends BankAccount{
     private double overDraft;
     public CurrentAccount(){

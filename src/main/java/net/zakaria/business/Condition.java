@@ -1,2 +1,5 @@
-package net.zakaria.business;public interface Condition {
+package net.zakaria.business;
+@FunctionalInterface
+public interface Condition<T> {
+    boolean test(T t);
 }

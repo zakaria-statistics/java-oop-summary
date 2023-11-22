@@ -28,7 +28,6 @@ public class App {
                 System.out.println(((SavingAccount)b).getType());
              */
             b.print();
-            System.out.println(b.getSecurityRate());
             System.out.println(b.getType());
             if (b instanceof CurrentAccount)
                 System.out.println("overDraft = "+ ((CurrentAccount)b).getOverDraft());
